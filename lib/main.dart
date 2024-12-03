@@ -18,11 +18,27 @@ class MyApp extends StatelessWidget {
         
       ),
       home: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           Stack(
             alignment: AlignmentDirectional.center,
+            children: [
+              Container(
+                color: Colors.white,
+                width: 100,
+                height: 100,
+              ),
+              Container(
+                color: Colors.red,
+                width: 50,
+                height: 50,
+              )
+            ],
+          ),
+          Stack(
+            alignment: AlignmentDirectional.center,
+            
             children: [
               Container(
                 color: Colors.white,
@@ -35,9 +51,10 @@ class MyApp extends StatelessWidget {
                 height: 50,
               )
             ],
-          ),
+          )
         ],
       ),
+      
     );
   }
 }
